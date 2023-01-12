@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser, { BodyParser } from 'body-parser';
 import { movieRoutes } from './routes/movieRoutes';
-
+import { actorRoutes } from './routes/actorRoutes';
 
 const port = 3000;
 
@@ -18,9 +18,10 @@ class App {
         this.express.use(bodyParser.json());
         this.express.use(bodyParser.urlencoded({extended: true}));
         
-        //Your routes here, run "npm i" in terminal first. To execute run "npm run app"
+        //Add your routes here, run "npm i" in terminal first. To execute run "npm run app"
+        
         //this.express.use("/example", exampleRoute);
-
+        this.express.use("/actor", actorRoutes)
         this.express.use("/movie", movieRoutes)
 
         this.express.listen(port, () => {
