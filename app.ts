@@ -21,8 +21,6 @@ class App {
         //Add your routes here, run "npm i" in terminal first. To execute run "npm run app"
         
         //this.express.use("/example", exampleRoute);
-        this.express.use("/actor", actorRoutes)
-        this.express.use("/movie", movieRoutes)
 
         this.express.listen(port, () => {
             console.log(`Example app listening at http://localhost:${port}`);
