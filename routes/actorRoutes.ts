@@ -1,4 +1,4 @@
-import * as express from 'express';
+import express from 'express';
 const actorController = require('../controllers/actorController');
 
 const router = express.Router();
