@@ -1,5 +1,5 @@
 import express from 'express'
-import { Genre, PrismaClient } from '@prisma/client'
+import { Genre, PrismaClient } from '@prisma/PrismaClient'
 import { faTruckMonster } from '@fortawesome/free-solid-svg-icons'
 
 const prisma = new PrismaClient()
